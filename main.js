@@ -28,7 +28,7 @@ let extensionsData = [];
 let currentFilter = "all"
 
 async function fetchExtensions() {
-    const res = await fetch("data.json")
+    const res = await fetch("/data.json")
     extensionsData = await res.json()
     applyFilter(currentFilter)
 }
